@@ -28,10 +28,7 @@ public class Sessao {
 		this.horario = horario;
 		this.filme = filme;
 		this.sala = sala;
-		if (preco == null) {
-			this.preco = BigDecimal.ZERO;
-		} else
-			this.preco = sala.getPreco().add(filme.getPreco());;
+		this.preco = sala.getPreco().add(filme.getPreco());;
 	}
 
 	public Sessao() {
